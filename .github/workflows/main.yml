@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
+    - uses: actions/push-to-s3@main
       with:
         args: --follow-symlinks --delete --exclude '.git/*'
       env:
