@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
-    - uses: Push-to-S3@main
+    - uses: .github/workflows/main.yml@main
       with:
         args: --follow-symlinks --delete --exclude '.git/*'
       env:
