@@ -1,4 +1,4 @@
-name: Push to S3
+name: Push-to-S3
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
-    - uses: elwalker627/aws-test-lambda@main
+    - uses: Push-to-S3@main
       with:
         args: --follow-symlinks --delete --exclude '.git/*'
       env:
