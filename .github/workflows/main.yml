@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
-    - uses: elwalker627/aws-test-lambda@main
       with:
         args: --follow-symlinks --delete --exclude '.git/*'
       env:
